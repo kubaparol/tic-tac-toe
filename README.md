@@ -6,6 +6,8 @@
 
 This is a project that allows you to play **tic tac toe**.
 
+See the live version of my [website](https://kubaparol.github.io/tic-tac-toe/).
+
 When one of the players wins the game or there is a tie, the board is locked and the corresponding message and button with the option to play again appears.
 
 I used **pure CSS** and **JS**.
@@ -47,3 +49,5 @@ Then I created an object with two arrays X and O, to which the players moves are
         'O': []
     };
 ```
+
+After each move, these boards are compared with the winning combinations.

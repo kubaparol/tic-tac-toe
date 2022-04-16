@@ -57,10 +57,10 @@ plateList.forEach((plate, index) => {
 function checkWhoseMove(plate) {
     if(round % 2 === 0) {
         plate.textContent = PLAYER2;
-        roundEl.textContent = `Now it's ${PLAYER2} turn!`
+        roundEl.textContent = `Now it's ${PLAYER1} turn!`
     } else {
         plate.textContent = PLAYER1;
-        roundEl.textContent = `Now it's ${PLAYER1} turn!`
+        roundEl.textContent = `Now it's ${PLAYER2} turn!`
     }
 }
 
