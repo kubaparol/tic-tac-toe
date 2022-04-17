@@ -4,7 +4,7 @@
 
 ## :mag: Overview
 
-This is a project that allows you to play **tic tac toe**.
+This is a project that allows you to play **tic tac toe** game.
 
 See the live version of my [website](https://kubaparol.github.io/tic-tac-toe/).
 

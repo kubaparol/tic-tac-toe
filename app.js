@@ -66,7 +66,6 @@ function checkWhoseMove(plate) {
 
 function check() {
     const result = playersMoves.reduce((total, row) => total.concat(row));
-    let winner = null;
     let moves = {
         'X': [],
         'O': []
@@ -80,20 +79,19 @@ function check() {
         if(combination.every(index => moves[PLAYER1].indexOf(index) > -1)) {
             resultEl.textContent = `${PLAYER1} wins!`
             roundEl.textContent = '';
-        }
-        if(combination.every(index => moves[PLAYER2].indexOf(index) > -1)) {
+        } else if(combination.every(index => moves[PLAYER2].indexOf(index) > -1)) {
             resultEl.textContent = `${PLAYER2} wins!`
             roundEl.textContent = '';
 
+        } else {
+            checkTie(result);
         }
         if(resultEl.textContent !== '') {
             board.style.opacity = '0.5';
             board.style.pointerEvents = 'none';
             playAgainButton.style.display = 'block';
         }
-        checkTie(result)
     })
-    console.log(winner)
 }
 
 function newGame() {
